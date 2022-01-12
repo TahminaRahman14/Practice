@@ -8,9 +8,25 @@ nav li a{
     color: blue;
     font-size: 20px;
 }
-nav ul{
+nav >ul{
     display: flex;
 }
 nav li:hover{
     background-color: cadetblue;
+}
+.dropdown{
+display: none;
+    background-color: brown;
+    position: absolute;
+    padding: 0 10px;
+    
+}
+
+nav>ul>li:hover>ul{
+    display: block;
+}
+
+.dropdown ul {
+    padding: 0;
+    margin: 0;
 }
